@@ -17,35 +17,66 @@
 </head>
 <body class="bg-dark text-white">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm backdrop-blur sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../../">
-                <i class="fas fa-gamepad text-purple me-2"></i>PUBG UCLab
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="../">
+                <i class="fas fa-crosshairs text-white me-2" style="font-size: 32px"></i>
+                <span class="fw-bold text-white">PUBG UCLab</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Collapsible Content -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <!-- Mobile Close Button -->
+                <button class="mobile-close d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Close">
+                    &times;
+                </button>
+
+                <!-- Nav Links -->
+                <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="../../">Home</a>
+                        <a class="nav-link px-3" href="../../">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../shop/">Shop</a>
+                        <a class="nav-link px-3" href="../../shop/">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../blog/">Blog</a>
+                        <a class="nav-link px-3 active" href="../../blog/">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../contact/">Contact</a>
+                        <a class="nav-link px-3" href="../../contact/">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../login/">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../register/">Register</a>
+                        <a class="nav-link position-relative px-3" href="../../cart/" id="cart-nav">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-purple" id="cart-count">0</span>
+                        </a>
                     </li>
                 </ul>
+
+                <!-- Desktop Login/Register (visible on lg+) -->
+                <ul class="navbar-nav d-none d-lg-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="btn btn-purple btn-sm" href="../../register/">
+                            <i class="fas fa-user-plus me-1"></i> Register Now
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Login/Register (visible only on mobile) -->
+                <div class="mobile-auth-buttons d-lg-none mt-auto text-center">
+                    <a class="btn btn-outline-purple" href="../../login/">
+                        <i class="fas fa-user me-1"></i> Login
+                    </a>
+                    <a class="btn btn-purple mt-2" href="../../register/">
+                        <i class="fas fa-user-plus me-1"></i> Register Now
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
