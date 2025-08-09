@@ -32,11 +32,13 @@
       class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm backdrop-blur sticky-top"
     >
       <div class="container">
+        <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="../">
           <i class="fas fa-crosshairs text-white me-2" style="font-size: 32px;"></i>
           <span class="fw-bold text-white">PUBG UCLab</span>
         </a>
 
+        <!-- Mobile Toggle Button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -49,7 +51,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Collapsible Content -->
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Mobile Close Button -->
           <button
             class="mobile-close d-lg-none"
             type="button"
@@ -60,15 +64,19 @@
             &times;
           </button>
 
+          <!-- Nav Links -->
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
               <a class="nav-link px-3" href="../">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-3 active" href="javascript:void(0)">Shop</a>
+              <a class="nav-link px-3" href="../shop/">Shop</a>
             </li>
             <li class="nav-item">
               <a class="nav-link px-3" href="../blog/">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 active" href="../contact/">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link position-relative px-3" href="../cart/" id="cart-nav">
@@ -81,7 +89,9 @@
             </li>
           </ul>
 
+          <!-- Desktop Login/Register (visible on lg+) -->
           <ul class="navbar-nav d-none d-lg-flex align-items-center">
+           
             <li class="nav-item">
               <a class="btn btn-purple btn-sm" href="../register/">
                 <i class="fas fa-user-plus me-1"></i> Register Now
@@ -89,6 +99,7 @@
             </li>
           </ul>
 
+          <!-- Mobile Login/Register (visible only on mobile) -->
           <div class="mobile-auth-buttons d-lg-none mt-auto text-center">
             <a class="btn btn-outline-purple" href="../login/">
               <i class="fas fa-user me-1"></i> Login
