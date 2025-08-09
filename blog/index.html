@@ -36,7 +36,10 @@
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="../">
-          <i class="fas fa-crosshairs text-white me-2" style="font-size: 32px;"></i>
+          <i
+            class="fas fa-crosshairs text-white me-2"
+            style="font-size: 32px"
+          ></i>
           <span class="fw-bold text-white">PUBG UCLab</span>
         </a>
 
@@ -81,11 +84,16 @@
               <a class="nav-link px-3" href="../contact/">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link position-relative px-3" href="../cart/" id="cart-nav">
+              <a
+                class="nav-link position-relative px-3"
+                href="../cart/"
+                id="cart-nav"
+              >
                 <i class="fas fa-shopping-cart"></i>
                 <span
                   class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-purple"
-                  id="cart-count">0</span
+                  id="cart-count"
+                  >0</span
                 >
               </a>
             </li>
@@ -93,7 +101,6 @@
 
           <!-- Desktop Login/Register (visible on lg+) -->
           <ul class="navbar-nav d-none d-lg-flex align-items-center">
-           
             <li class="nav-item">
               <a class="btn btn-purple btn-sm" href="../register/">
                 <i class="fas fa-user-plus me-1"></i> Register Now
@@ -114,169 +121,272 @@
       </div>
     </nav>
 
-    
-
     <!-- Main Content -->
     <main class="container my-5">
       <!-- Breadcrumb -->
       <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../" class="text-purple">Home</a></li>
+          <li class="breadcrumb-item">
+            <a href="../" class="text-purple">Home</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">Blog</li>
         </ol>
       </nav>
 
-                <!-- Page Header -->
-                <div class="text-center mb-5">
-                  <h1 class="display-4 text-white fw-bold mb-3">
-                    <i class="fas fa-newspaper text-purple me-3"></i>PUBG Gaming Blog
-                  </h1>
-                  <p class="text-muted lead">Latest news, tips, and updates from the PUBG universe</p>
+      <!-- Page Header -->
+      <div class="text-center mb-5">
+        <h1 class="display-4 text-white fw-bold mb-3">
+          <i class="fas fa-newspaper text-purple me-3"></i>PUBG Gaming Blog
+        </h1>
+        <p class="text-muted lead">
+          Latest news, tips, and updates from the PUBG universe
+        </p>
+      </div>
+
+      <!-- Blog Posts -->
+      <div class="row g-4" id="blog-posts">
+        <!-- Featured Post -->
+        <div class="col-12 mb-5">
+          <div class="card bg-dark-card border-purple">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img
+                  src="../images/blogs/Season 25 Arrives.jpg"
+                  alt="PUBG Season 25 Update"
+                  class="img-fluid h-100 w-100"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body p-4">
+                  <span class="badge bg-purple mb-3">Featured</span>
+                  <h3 class="card-title text-white">
+                    New PUBG Mobile Update: Season 25 Arrives
+                  </h3>
+                  <p class="card-text text-muted">
+                    Discover the latest features, new maps, and exclusive
+                    rewards in PUBG Mobile Season 25. From enhanced graphics to
+                    new weapons, this update brings the most immersive battle
+                    royale experience yet.
+                  </p>
+                  <div class="d-flex align-items-center text-muted small mb-3">
+                    <i class="fas fa-user me-2"></i>
+                    <span class="me-3">PUBG Expert</span>
+                    <i class="fas fa-calendar me-2"></i>
+                    <span>January 15, 2025</span>
+                  </div>
+                  <p class="text-muted small">5 min read</p>
+                  <a
+                    href="/blog/pubg-season-25-update/"
+                    class="btn btn-outline-purple btn-sm"
+                    >Read More</a
+                  >
                 </div>
-                
-                <!-- Blog Posts -->
-                <div class="row g-4" id="blog-posts">
-                  <!-- Featured Post -->
-                  <div class="col-12 mb-5">
-                    <div class="card bg-dark-card border-purple">
-                      <div class="row g-0">
-                        <div class="col-md-6">
-                          <img src="../images/blogs/Season 25 Arrives.jpg" alt="PUBG Season 25 Update" class="img-fluid h-100 w-100" style="object-fit: cover;" />
-                        </div>
-                        <div class="col-md-6">
-                          <div class="card-body p-4">
-                            <span class="badge bg-purple mb-3">Featured</span>
-                            <h3 class="card-title text-white">New PUBG Mobile Update: Season 25 Arrives</h3>
-                            <p class="card-text text-muted">Discover the latest features, new maps, and exclusive rewards in PUBG Mobile Season 25. From enhanced graphics to new weapons, this update brings the most immersive battle royale experience yet.</p>
-                            <div class="d-flex align-items-center text-muted small mb-3">
-                              <i class="fas fa-user me-2"></i>
-                              <span class="me-3">PUBG Expert</span>
-                              <i class="fas fa-calendar me-2"></i>
-                              <span>January 15, 2025</span>
-                            </div>
-                            <p class="text-muted small">5 min read</p>
-                            <a href="/pubg-season-25-update/" class="btn btn-outline-purple btn-sm">Read More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <!-- Other Blog Posts -->
-                  <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark-card border-0 shadow-sm h-100">
-                      <img src="../images/blogs/Pro Strategies.jpg" alt="PUBG Pro Strategies" class="card-img-top" />
-                      <div class="card-body">
-                        <span class="badge bg-success mb-2">Tips</span>
-                        <h5 class="card-title text-white">Pro Strategies: How to Win More Chicken Dinners</h5>
-                        <p class="card-text text-muted">Master the art of survival with these proven strategies from top PUBG players. Learn positioning, timing, and tactical decisions that will increase your win rate significantly.</p>
-                        <div class="d-flex align-items-center text-muted mb-3">
-                          <i class="fas fa-user me-2"></i>
-                          <span class="me-3">Pro Player</span>
-                          <i class="fas fa-calendar me-2"></i>
-                          <span>January 12, 2025</span>
-                        </div>
-                        <p class="text-muted small">7 min read</p>
-                        <a href="/pubg-pro-strategies/" class="btn btn-outline-purple btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark-card border-0 shadow-sm h-100">
-                      <img src="../images/blogs/Skins Collection.jpg" alt="Exclusive PUBG Skins" class="card-img-top" />
-                      <div class="card-body">
-                        <span class="badge bg-warning mb-2">Skins</span>
-                        <h5 class="card-title text-white">Exclusive Skins Collection: Limited Edition Items</h5>
-                        <p class="card-text text-muted">Explore our latest collection of rare and exclusive PUBG skins. From legendary weapon skins to unique character outfits, discover items that will make you stand out on the battlefield.</p>
-                        <div class="d-flex align-items-center text-muted mb-3">
-                          <i class="fas fa-user me-2"></i>
-                          <span class="me-3">Skin Collector</span>
-                          <i class="fas fa-calendar me-2"></i>
-                          <span>January 10, 2025</span>
-                        </div>
-                        <p class="text-muted small">4 min read</p>
-                        <a href="/exclusive-pubg-skins/" class="btn btn-outline-purple btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark-card border-0 shadow-sm h-100">
-                      <img src="../images/blogs/Global Championship.png" alt="PUBG Global Championship" class="card-img-top" />
-                      <div class="card-body">
-                        <span class="badge bg-info mb-2">Tournament</span>
-                        <h5 class="card-title text-white">PUBG Global Championship 2025: What to Expect</h5>
-                        <p class="card-text text-muted">Get ready for the biggest PUBG tournament of the year! Learn about the participating teams, prize pools, and schedule for the PUBG Global Championship 2025.</p>
-                        <div class="d-flex align-items-center text-muted mb-3">
-                          <i class="fas fa-user me-2"></i>
-                          <span class="me-3">Tournament Analyst</span>
-                          <i class="fas fa-calendar me-2"></i>
-                          <span>January 8, 2025</span>
-                        </div>
-                        <p class="text-muted small">6 min read</p>
-                        <a href="/pubg-global-championship-2025/" class="btn btn-outline-purple btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark-card border-0 shadow-sm h-100">
-                      <img src="../images/blogs/Weapon Guide.jpg" alt="PUBG Weapon Guide" class="card-img-top" />
-                      <div class="card-body">
-                        <span class="badge bg-danger mb-2">Weapons</span>
-                        <h5 class="card-title text-white">Weapon Guide: Best Loadouts for Different Maps</h5>
-                        <p class="card-text text-muted">Optimize your weapon selection based on map terrain and playstyle. This comprehensive guide covers the best weapon combinations for Erangel, Miramar, Sanhok, and other popular maps.</p>
-                        <div class="d-flex align-items-center text-muted mb-3">
-                          <i class="fas fa-user me-2"></i>
-                          <span class="me-3">Weapon Expert</span>
-                          <i class="fas fa-calendar me-2"></i>
-                          <span>January 5, 2025</span>
-                        </div>
-                        <p class="text-muted small">8 min read</p>
-                        <a href="/pubg-weapon-loadout-guide/" class="btn btn-outline-purple btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark-card border-0 shadow-sm h-100">
-                      <img src="../images/blogs/PUBG Squad.jpg" alt="PUBG Squad Communication" class="card-img-top" />
-                      <div class="card-body">
-                        <span class="badge bg-primary mb-2">Community</span>
-                        <h5 class="card-title text-white">Building Your PUBG Squad: Team Communication Tips</h5>
-                        <p class="card-text text-muted">Effective communication is key to squad success. Learn essential callouts, strategies for team coordination, and how to build a reliable PUBG squad that dominates together.</p>
-                        <div class="d-flex align-items-center text-muted mb-3">
-                          <i class="fas fa-user me-2"></i>
-                          <span class="me-3">Squad Leader</span>
-                          <i class="fas fa-calendar me-2"></i>
-                          <span>January 3, 2025</span>
-                        </div>
-                        <p class="text-muted small">5 min read</p>
-                        <a href="/pubg-squad-communication/" class="btn btn-outline-purple btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark-card border-0 shadow-sm h-100">
-                      <img src="../images/blogs/PUBG Mobile 2.0.jpg" alt="PUBG Mobile 2.0" class="card-img-top" />
-                      <div class="card-body">
-                        <span class="badge bg-secondary mb-2">Updates</span>
-                        <h5 class="card-title text-white">PUBG Mobile 2.0: Revolutionary Changes Coming</h5>
-                        <p class="card-text text-muted">PUBG Mobile 2.0 is set to revolutionize the mobile gaming experience. Get a sneak peek at the new features, improved graphics, and enhanced gameplay mechanics that await players.</p>
-                        <div class="d-flex align-items-center text-muted mb-3">
-                          <i class="fas fa-user me-2"></i>
-                          <span class="me-3">Mobile Gaming Expert</span>
-                          <i class="fas fa-calendar me-2"></i>
-                          <span>December 30, 2024</span>
-                        </div>
-                        <p class="text-muted small">6 min read</p>
-                        <a href="/pubg-mobile-2-0-preview/" class="btn btn-outline-purple btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Blog Posts -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark-card border-0 shadow-sm h-100">
+            <img
+              src="../images/blogs/Pro Strategies.jpg"
+              alt="PUBG Pro Strategies"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Tips</span>
+              <h5 class="card-title text-white">
+                Pro Strategies: How to Win More Chicken Dinners
+              </h5>
+              <p class="card-text text-muted">
+                Master the art of survival with these proven strategies from top
+                PUBG players. Learn positioning, timing, and tactical decisions
+                that will increase your win rate significantly.
+              </p>
+              <div class="d-flex align-items-center text-muted mb-3">
+                <i class="fas fa-user me-2"></i>
+                <span class="me-3">Pro Player</span>
+                <i class="fas fa-calendar me-2"></i>
+                <span>January 12, 2025</span>
+              </div>
+              <p class="text-muted small">7 min read</p>
+              <a
+                href="/blog/pubg-pro-strategies/"
+                class="btn btn-outline-purple btn-sm"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark-card border-0 shadow-sm h-100">
+            <img
+              src="../images/blogs/Skins Collection.jpg"
+              alt="Exclusive PUBG Skins"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <span class="badge bg-warning mb-2">Skins</span>
+              <h5 class="card-title text-white">
+                Exclusive Skins Collection: Limited Edition Items
+              </h5>
+              <p class="card-text text-muted">
+                Explore our latest collection of rare and exclusive PUBG skins.
+                From legendary weapon skins to unique character outfits,
+                discover items that will make you stand out on the battlefield.
+              </p>
+              <div class="d-flex align-items-center text-muted mb-3">
+                <i class="fas fa-user me-2"></i>
+                <span class="me-3">Skin Collector</span>
+                <i class="fas fa-calendar me-2"></i>
+                <span>January 10, 2025</span>
+              </div>
+              <p class="text-muted small">4 min read</p>
+              <a
+                href="/blog/exclusive-pubg-skins/"
+                class="btn btn-outline-purple btn-sm"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark-card border-0 shadow-sm h-100">
+            <img
+              src="../images/blogs/Global Championship.png"
+              alt="PUBG Global Championship"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <span class="badge bg-info mb-2">Tournament</span>
+              <h5 class="card-title text-white">
+                PUBG Global Championship 2025: What to Expect
+              </h5>
+              <p class="card-text text-muted">
+                Get ready for the biggest PUBG tournament of the year! Learn
+                about the participating teams, prize pools, and schedule for the
+                PUBG Global Championship 2025.
+              </p>
+              <div class="d-flex align-items-center text-muted mb-3">
+                <i class="fas fa-user me-2"></i>
+                <span class="me-3">Tournament Analyst</span>
+                <i class="fas fa-calendar me-2"></i>
+                <span>January 8, 2025</span>
+              </div>
+              <p class="text-muted small">6 min read</p>
+              <a
+                href="/blog/pubg-global-championship-2025/"
+                class="btn btn-outline-purple btn-sm"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark-card border-0 shadow-sm h-100">
+            <img
+              src="../images/blogs/Weapon Guide.jpg"
+              alt="PUBG Weapon Guide"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">Weapons</span>
+              <h5 class="card-title text-white">
+                Weapon Guide: Best Loadouts for Different Maps
+              </h5>
+              <p class="card-text text-muted">
+                Optimize your weapon selection based on map terrain and
+                playstyle. This comprehensive guide covers the best weapon
+                combinations for Erangel, Miramar, Sanhok, and other popular
+                maps.
+              </p>
+              <div class="d-flex align-items-center text-muted mb-3">
+                <i class="fas fa-user me-2"></i>
+                <span class="me-3">Weapon Expert</span>
+                <i class="fas fa-calendar me-2"></i>
+                <span>January 5, 2025</span>
+              </div>
+              <p class="text-muted small">8 min read</p>
+              <a
+                href="/blog/pubg-weapon-loadout-guide/"
+                class="btn btn-outline-purple btn-sm"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark-card border-0 shadow-sm h-100">
+            <img
+              src="../images/blogs/PUBG Squad.jpg"
+              alt="PUBG Squad Communication"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">Community</span>
+              <h5 class="card-title text-white">
+                Building Your PUBG Squad: Team Communication Tips
+              </h5>
+              <p class="card-text text-muted">
+                Effective communication is key to squad success. Learn essential
+                callouts, strategies for team coordination, and how to build a
+                reliable PUBG squad that dominates together.
+              </p>
+              <div class="d-flex align-items-center text-muted mb-3">
+                <i class="fas fa-user me-2"></i>
+                <span class="me-3">Squad Leader</span>
+                <i class="fas fa-calendar me-2"></i>
+                <span>January 3, 2025</span>
+              </div>
+              <p class="text-muted small">5 min read</p>
+              <a
+                href="/blog/pubg-squad-communication/"
+                class="btn btn-outline-purple btn-sm"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark-card border-0 shadow-sm h-100">
+            <img
+              src="../images/blogs/PUBG Mobile 2.0.jpg"
+              alt="PUBG Mobile 2.0"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Updates</span>
+              <h5 class="card-title text-white">
+                PUBG Mobile 2.0: Revolutionary Changes Coming
+              </h5>
+              <p class="card-text text-muted">
+                PUBG Mobile 2.0 is set to revolutionize the mobile gaming
+                experience. Get a sneak peek at the new features, improved
+                graphics, and enhanced gameplay mechanics that await players.
+              </p>
+              <div class="d-flex align-items-center text-muted mb-3">
+                <i class="fas fa-user me-2"></i>
+                <span class="me-3">Mobile Gaming Expert</span>
+                <i class="fas fa-calendar me-2"></i>
+                <span>December 30, 2024</span>
+              </div>
+              <p class="text-muted small">6 min read</p>
+              <a
+                href="/blog/pubg-mobile-2-0-preview/"
+                class="btn btn-outline-purple btn-sm"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Newsletter Signup -->
       <div class="row justify-content-center mt-5">
@@ -285,7 +395,8 @@
             <div class="card-body p-4 text-center">
               <h4 class="text-white mb-3">Stay Updated with PUBG UCLab</h4>
               <p class="text-muted mb-4">
-                Subscribe to our newsletter for the latest gaming news, exclusive offers, and PUBG updates.
+                Subscribe to our newsletter for the latest gaming news,
+                exclusive offers, and PUBG updates.
               </p>
               <div class="row g-3 justify-content-center">
                 <div class="col-md-8">
@@ -308,7 +419,6 @@
       </div>
 
       <!-- Pagination -->
-      
     </main>
 
     <!-- Footer -->
@@ -317,24 +427,60 @@
         <div class="row">
           <div class="col-lg-4 mb-4">
             <h5 class="text-white mb-3">PUBG UCLab</h5>
-            <p class="text-muted">Your premier destination for PUBG gaming essentials. Get exclusive skins, codes, and mods to dominate the battlefield.</p>
-            <p class="text-muted small">We are not an affiliate agency. All products are sold independently through our platform.</p>
+            <p class="text-muted">
+              Your premier destination for PUBG gaming essentials. Get exclusive
+              skins, codes, and mods to dominate the battlefield.
+            </p>
+            <p class="text-muted small">
+              We are not an affiliate agency. All products are sold
+              independently through our platform.
+            </p>
           </div>
           <div class="col-lg-2 col-md-6 mb-4">
             <h6 class="text-white mb-3">Quick Links</h6>
             <ul class="list-unstyled">
-              <li><a href="../shop/" class="text-muted text-decoration-none">Shop</a></li>
-              <li><a href="javascript:void(0)" class="text-muted text-decoration-none">Blog</a></li>
-              <li><a href="../register/" class="text-muted text-decoration-none">Register</a></li>
-              <li><a href="../contact/" class="text-muted text-decoration-none">Contact</a></li>
+              <li>
+                <a href="../shop/" class="text-muted text-decoration-none"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="text-muted text-decoration-none"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="../register/" class="text-muted text-decoration-none"
+                  >Register</a
+                >
+              </li>
+              <li>
+                <a href="../contact/" class="text-muted text-decoration-none"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-6 mb-4">
             <h6 class="text-white mb-3">Legal</h6>
             <ul class="list-unstyled">
-              <li><a href="../privacy/" class="text-muted text-decoration-none">Privacy Policy</a></li>
-              <li><a href="../terms/" class="text-muted text-decoration-none">Terms of Service</a></li>
-              <li><a href="../cookies/" class="text-muted text-decoration-none">Cookies Policy</a></li>
+              <li>
+                <a href="../privacy/" class="text-muted text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="../terms/" class="text-muted text-decoration-none"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="../cookies/" class="text-muted text-decoration-none"
+                  >Cookies Policy</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-4 mb-4">
@@ -346,17 +492,27 @@
               <i class="fas fa-envelope me-2"></i>info@pubguclab.com
             </p>
             <div class="d-flex gap-3 mt-3">
-              <a href="javascript:void(0)" class="text-muted fs-5"><i class="fab fa-facebook"></i></a>
-              <a href="javascript:void(0)" class="text-muted fs-5"><i class="fab fa-twitter"></i></a>
-              <a href="javascript:void(0)" class="text-muted fs-5"><i class="fab fa-instagram"></i></a>
-              <a href="javascript:void(0)" class="text-muted fs-5"><i class="fab fa-discord"></i></a>
+              <a href="javascript:void(0)" class="text-muted fs-5"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="javascript:void(0)" class="text-muted fs-5"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="javascript:void(0)" class="text-muted fs-5"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="javascript:void(0)" class="text-muted fs-5"
+                ><i class="fab fa-discord"></i
+              ></a>
             </div>
           </div>
         </div>
-        <hr class="border-purple">
+        <hr class="border-purple" />
         <div class="row">
           <div class="col-12 text-center">
-            <p class="text-muted mb-0">&copy; 2024 PUBG UCLab. All rights reserved.</p>
+            <p class="text-muted mb-0">
+              &copy; 2024 PUBG UCLab. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
