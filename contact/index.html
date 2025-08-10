@@ -349,22 +349,23 @@
         </div>
     </footer>
 
-    <!-- Cookie Consent Popup -->
-    <div id="cookie-popup" class="position-fixed bottom-0 start-0 w-100 bg-dark-secondary border-top border-purple p-3" style="display: none; z-index: 1050;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <p class="text-light mb-2 mb-md-0">
-                        We use cookies to enhance your gaming experience. By continuing to use our site, you agree to our 
-                        <a href="../cookies/" class="text-purple">Cookies Policy</a>.
-                    </p>
-                </div>
-                <div class="col-md-4 text-md-end">
-                    <button class="btn btn-outline-purple btn-sm me-2" onclick="declineCookies()">Decline</button>
-                    <button class="btn btn-purple btn-sm" onclick="acceptCookies()">Accept</button>
-                </div>
+     <div id="cookie-popup" class="cookie-popup">
+      <div class="card bg-dark-card border-purple">
+        <div class="card-body p-3">
+          <div class="d-flex align-items-start">
+            <i class="fas fa-cookie-bite text-purple me-3 mt-1"></i>
+            <div class="flex-grow-1">
+              <h6 class="text-white mb-2">Cookie Notice</h6>
+              <p class="text-muted small mb-3">We use cookies to enhance your browsing experience and provide personalized content. By continuing to use our site, you agree to our cookie policy.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-purple btn-sm" onclick="acceptCookies()">Accept All</button>
+                <button class="btn btn-outline-secondary btn-sm" onclick="declineCookies()">Decline</button>
+              </div>
             </div>
+            <button class="btn-close btn-close-white" onclick="declineCookies()"></button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Bootstrap JS -->
