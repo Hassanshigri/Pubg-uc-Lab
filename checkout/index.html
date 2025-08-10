@@ -8,16 +8,11 @@
     <meta name="keywords" content="PUBG checkout, gaming store checkout, PUBG skins purchase, gaming codes checkout, secure payment, gaming store">
     <link rel="canonical" href="https://pubguclab.com/checkout/">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-    
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-secondary">
         <div class="container">
             <a class="navbar-brand fw-bold" href="../">
@@ -28,15 +23,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../shop/">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../blog/">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../contact/">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../shop/">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../blog/">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact/">Contact</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
                     <a href="../cart/" class="btn btn-outline-purple me-3">
@@ -48,8 +37,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
     <section class="py-5 bg-dark-secondary">
         <div class="container">
             <div class="row">
@@ -60,12 +47,9 @@
             </div>
         </div>
     </section>
-
-    <!-- Checkout Form -->
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <!-- Checkout Form -->
                 <div class="col-lg-8">
                     <div class="card bg-dark-card border-purple">
                         <div class="card-header bg-dark-secondary border-purple">
@@ -73,11 +57,8 @@
                         </div>
                         <div class="card-body">
                             <form id="checkout-form">
-                                <!-- Personal Information -->
                                 <div class="row mb-4">
-                                    <div class="col-12">
-                                        <h5 class="text-white mb-3">Personal Information</h5>
-                                    </div>
+                                    <div class="col-12"><h5 class="text-white mb-3">Personal Information</h5></div>
                                     <div class="col-md-6 mb-3">
                                         <label for="firstName" class="form-label text-light">First Name *</label>
                                         <input type="text" class="form-control bg-dark border-purple text-light" id="firstName" required>
@@ -95,12 +76,8 @@
                                         <input type="tel" class="form-control bg-dark border-purple text-light" id="phone">
                                     </div>
                                 </div>
-
-                                <!-- Billing Address -->
                                 <div class="row mb-4">
-                                    <div class="col-12">
-                                        <h5 class="text-white mb-3">Billing Address</h5>
-                                    </div>
+                                    <div class="col-12"><h5 class="text-white mb-3">Billing Address</h5></div>
                                     <div class="col-12 mb-3">
                                         <label for="address" class="form-label text-light">Street Address *</label>
                                         <input type="text" class="form-control bg-dark border-purple text-light" id="address" required>
@@ -118,12 +95,8 @@
                                         <input type="text" class="form-control bg-dark border-purple text-light" id="zipCode" required>
                                     </div>
                                 </div>
-
-                                <!-- Payment Information -->
                                 <div class="row mb-4">
-                                    <div class="col-12">
-                                        <h5 class="text-white mb-3">Payment Information</h5>
-                                    </div>
+                                    <div class="col-12"><h5 class="text-white mb-3">Payment Information</h5></div>
                                     <div class="col-12 mb-3">
                                         <label for="cardNumber" class="form-label text-light">Card Number *</label>
                                         <input type="text" class="form-control bg-dark border-purple text-light" id="cardNumber" placeholder="1234 5678 9012 3456" required>
@@ -141,8 +114,6 @@
                                         <input type="text" class="form-control bg-dark border-purple text-light" id="cardName" required>
                                     </div>
                                 </div>
-
-                                <!-- Terms and Conditions -->
                                 <div class="row mb-4">
                                     <div class="col-12">
                                         <div class="form-check">
@@ -153,8 +124,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Submit Button -->
                                 <div class="row">
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-gradient btn-lg w-100">
@@ -166,17 +135,13 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Order Summary -->
                 <div class="col-lg-4">
                     <div class="card bg-dark-card border-purple sticky-top" style="top: 20px;">
                         <div class="card-header bg-dark-secondary border-purple">
                             <h4 class="text-white mb-0">Order Summary</h4>
                         </div>
                         <div class="card-body">
-                            <div id="order-items">
-                                <!-- Cart items will be loaded here -->
-                            </div>
+                            <div id="order-items"></div>
                             <hr class="border-purple">
                             <div class="d-flex justify-content-between mb-2">
                                 <span class="text-light">Subtotal:</span>
@@ -200,8 +165,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="bg-dark-secondary py-5">
         <div class="container">
             <div class="row">
@@ -229,12 +192,8 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <h6 class="text-white mb-3">Contact Info</h6>
-                    <p class="text-muted mb-2">
-                        <i class="fas fa-phone me-2"></i>+1 555-123-4567
-                    </p>
-                    <p class="text-muted mb-2">
-                        <i class="fas fa-envelope me-2"></i>info@pubguclab.com
-                    </p>
+                    <p class="text-muted mb-2"><i class="fas fa-phone me-2"></i>+1 555-123-4567</p>
+                    <p class="text-muted mb-2"><i class="fas fa-envelope me-2"></i>info@pubguclab.com</p>
                     <div class="d-flex gap-3 mt-3">
                         <a href="javascript:void(0)" class="text-muted fs-5"><i class="fab fa-facebook"></i></a>
                         <a href="javascript:void(0)" class="text-muted fs-5"><i class="fab fa-twitter"></i></a>
@@ -251,46 +210,39 @@
             </div>
         </div>
     </footer>
-
-    <!-- Cookie Consent Popup -->
-    <div id="cookie-popup" class="position-fixed bottom-0 start-0 w-100 bg-dark-secondary border-top border-purple p-3" style="display: none; z-index: 1050;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <p class="text-light mb-2 mb-md-0">
-                        We use cookies to enhance your gaming experience. By continuing to use our site, you agree to our 
-                        <a href="../cookies/" class="text-purple">Cookies Policy</a>.
-                    </p>
-                </div>
-                <div class="col-md-4 text-md-end">
-                    <button class="btn btn-outline-purple btn-sm me-2" onclick="declineCookies()">Decline</button>
-                    <button class="btn btn-purple btn-sm" onclick="acceptCookies()">Accept</button>
-                </div>
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="card bg-dark-card border-purple">
+        <div class="card-body p-3">
+          <div class="d-flex align-items-start">
+            <i class="fas fa-cookie-bite text-purple me-3 mt-1"></i>
+            <div class="flex-grow-1">
+              <h6 class="text-white mb-2">Cookie Notice</h6>
+              <p class="text-muted small mb-3">We use cookies to enhance your browsing experience and provide personalized content. By continuing to use our site, you agree to our cookie policy.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-purple btn-sm" onclick="acceptCookies()">Accept All</button>
+                <button class="btn btn-outline-secondary btn-sm" onclick="declineCookies()">Decline</button>
+              </div>
             </div>
+            <button class="btn-close btn-close-white" onclick="declineCookies()"></button>
+          </div>
         </div>
+      </div>
     </div>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="../main.js"></script>
     <script>
-        // Load order summary
         function loadOrderSummary() {
             const orderItems = document.getElementById('order-items');
             const subtotalEl = document.getElementById('subtotal');
             const taxEl = document.getElementById('tax');
             const totalEl = document.getElementById('total');
-
             if (!cart.items.length) {
                 orderItems.innerHTML = '<p class="text-muted">No items in cart</p>';
                 return;
             }
-
             const subtotal = cart.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
             const tax = subtotal * 0.085;
             const total = subtotal + tax;
-
             orderItems.innerHTML = cart.items.map(item => `
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <div>
@@ -300,30 +252,37 @@
                     <span class="text-light">$${(item.price * item.quantity).toFixed(2)}</span>
                 </div>
             `).join('');
-
             subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
             taxEl.textContent = `$${tax.toFixed(2)}`;
             totalEl.textContent = `$${total.toFixed(2)}`;
         }
-
-        // Handle form submission
         document.getElementById('checkout-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Simulate processing
             const submitBtn = e.target.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Processing...';
             submitBtn.disabled = true;
-
-            // Simulate API call delay
             setTimeout(() => {
-                // Redirect to registration page with confirmation message
-                window.location.href = '../register/?confirmation=1';
+                cart.clearCart();
+                const notification = document.createElement('div');
+                notification.className = 'alert alert-success position-fixed';
+                notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+                notification.innerHTML = `
+                    <i class="fas fa-check-circle me-2"></i>
+                    Your order is placed! We will update you via email shortly.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                document.body.appendChild(notification);
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.remove();
+                    }
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    window.location.href = '../register/?confirmation=1';
+                }, 3000);
             }, 2000);
         });
-
-        // Initialize page
         document.addEventListener('DOMContentLoaded', function() {
             loadOrderSummary();
             showCookiePopup();
