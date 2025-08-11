@@ -36,7 +36,10 @@
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="/">
-          <i class="fas fa-crosshairs text-white me-2" style="font-size: 32px;"></i>
+          <i
+            class="fas fa-crosshairs text-white me-2"
+            style="font-size: 32px"
+          ></i>
           <span class="fw-bold text-white">PUBG UCLab</span>
         </a>
 
@@ -72,17 +75,25 @@
               <a class="nav-link px-3" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-3" href="../shop/">Shop</a>
+              <a class="nav-link px-3" href="/shop/">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-3" href="../blog/">Blog</a>
+              <a class="nav-link px-3" href="/blog/">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link position-relative px-3" href="../cart/" id="cart-nav">
+              <a class="nav-link px-3" href="/contact/">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link position-relative px-3"
+                href="/cart/"
+                id="cart-nav"
+              >
                 <i class="fas fa-shopping-cart"></i>
                 <span
                   class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-purple"
-                  id="cart-count">0</span
+                  id="cart-count"
+                  >0</span
                 >
               </a>
             </li>
@@ -91,11 +102,21 @@
           <!-- Desktop Login/Register (visible on lg+) -->
           <ul class="navbar-nav d-none d-lg-flex align-items-center">
             <li class="nav-item">
-              <a class="btn btn-purple btn-sm" href="../register/">
+              <a class="btn btn-purple btn-sm" href="/register/">
                 <i class="fas fa-user-plus me-1"></i> Register Now
               </a>
             </li>
           </ul>
+
+          <!-- Mobile Login/Register (visible only on mobile) -->
+          <div class="mobile-auth-buttons d-lg-none mt-auto text-center">
+            <a class="btn btn-outline-purple" href="/login/">
+              <i class="fas fa-user me-1"></i> Login
+            </a>
+            <a class="btn btn-purple mt-2" href="/register/">
+              <i class="fas fa-user-plus me-1"></i> Register Now
+            </a>
+          </div>
         </div>
       </div>
     </nav>
